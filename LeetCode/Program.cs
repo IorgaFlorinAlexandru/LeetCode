@@ -6,4 +6,6 @@ using LeetCode;
 //ContainsDuplicateProblem.Execute(); //TODO LOOK FOR A BETTER MEMORY EFFICIENT SOLUTION
 //ContainsNearbyDuplicateProblem.Execute(); //MAYBE DO VERSION WITHOUT LINQ
 //TopKFrequentProblem.Execute();
-ProductExceptSelfProblem.Execute();
+//ProductExceptSelfProblem.Execute();
+//LengthOfLastWordProblem.Execute();
+IsSubsequenceProblem.Execute();
