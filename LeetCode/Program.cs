@@ -8,4 +8,5 @@ using LeetCode;
 //TopKFrequentProblem.Execute();
 //ProductExceptSelfProblem.Execute();
 //LengthOfLastWordProblem.Execute();
-IsSubsequenceProblem.Execute();
+//IsSubsequenceProblem.Execute();
+LongestCommonPrefixProblem.Execute();

@@ -25,9 +25,6 @@ namespace LeetCode
 						.ToArray();
 					for(int j = 0; j < indexes.Length; j++)
 					{
-						Console.WriteLine(Math.Abs(i - indexes[j]));
-                        Console.WriteLine(i.ToString() + " - " + indexes[j].ToString());
-
                         if (Math.Abs(i - indexes[j]) <= k) return true;
 					}
 
