@@ -9,4 +9,5 @@ using LeetCode;
 //ProductExceptSelfProblem.Execute();
 //LengthOfLastWordProblem.Execute();
 //IsSubsequenceProblem.Execute();
-LongestCommonPrefixProblem.Execute();
+//LongestCommonPrefixProblem.Execute();
+AddBinaryProblem.Execute();
