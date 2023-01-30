@@ -41,7 +41,6 @@ namespace LeetCode
 				indexB--;
 			}
 
-
 			return Reverse(sb.ToString());
         }
 

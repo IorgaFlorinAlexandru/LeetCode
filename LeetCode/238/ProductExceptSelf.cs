@@ -5,8 +5,9 @@
 		public static void Execute()
 		{
 			int[] nums = { 1, 2, 3, 4 };
+			int[] nums2 = { -1, 1, 0, -3, 3 };
 
-			var results = ProductExceptSelf(nums);
+			var results = ProductExceptSelf(nums2);
 
 			foreach(var result in results)
 			{
@@ -16,17 +17,18 @@
 
 		public static int[] ProductExceptSelf(int[] nums)
 		{
-			Dictionary<int, int> keyValues = new Dictionary<int, int>();
+			int sum = 1;
 			for(int i = 0; i < nums.Length; i++)
 			{
-				keyValues.Add(nums[i], 1);
+				sum *= nums[i];
 			}
 
-            for (int i = 0; i < nums.Length; i++)
-            {
-                
-            }
-			return keyValues.Select(x => x.Value).ToArray();
+			for(int i = 0; i < nums.Length; i++)
+			{
+				nums[i] = sum / nums[i];
+			}
+
+			return nums;
 		}
 
     }
