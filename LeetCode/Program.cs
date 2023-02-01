@@ -11,4 +11,5 @@ using LeetCode;
 //IsSubsequenceProblem.Execute();
 //LongestCommonPrefixProblem.Execute();
 //AddBinaryProblem.Execute(); //TODO CHECK SOLUTIONS
-ValidAnagramProblem.Execute();
+//ValidAnagramProblem.Execute(); //TODO SORT ANAGRAMS
+NumUniqueEmailsProblem.Execute();
