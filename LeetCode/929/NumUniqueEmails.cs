@@ -22,19 +22,23 @@ namespace LeetCode
 			HashSet<string> strings = new HashSet<string>();
 			for(int i = 0; i<s.Length; i++)
 			{
-				for(int j = 0; j < s[i].Length; j++)
-				{
-					if (!(s[i][j] == '.'))
-					{
-						sb.Append(s[i][j]);
-					}
-					if (s[i][j] == '+')
-					{
+				var sts = s[i].Split('@');
 
+				for(int j = 0; j < sts[0].Length; j++)
+				{
+					if (!(sts[0][j] == '.' || sts[0][j] == '+'))
+					{
+						sb.Append(sts[0][j]);
+					}
+					if (sts[0][j] == '+')
+					{
+						j = sts[0].Length;
 					}
 				}
 
-				if (!strings.Contains(sb.ToString()))
+				sb.Append('@' + sts[1]);
+
+                if (!strings.Contains(sb.ToString()))
 				{
 					strings.Add(sb.ToString());
 					output++;
