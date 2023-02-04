@@ -6,10 +6,11 @@ using LeetCode;
 //ContainsDuplicateProblem.Execute(); //TODO LOOK FOR A BETTER MEMORY EFFICIENT SOLUTION
 //ContainsNearbyDuplicateProblem.Execute(); //MAYBE DO VERSION WITHOUT LINQ
 //TopKFrequentProblem.Execute();
-ProductExceptSelfProblem.Execute();
+//ProductExceptSelfProblem.Execute(); //TODO LOOK AT OTHER SOLUTIONS
 //LengthOfLastWordProblem.Execute();
 //IsSubsequenceProblem.Execute();
 //LongestCommonPrefixProblem.Execute();
 //AddBinaryProblem.Execute(); //TODO CHECK SOLUTIONS
 //ValidAnagramProblem.Execute(); //TODO SORT ANAGRAMS
 //NumUniqueEmailsProblem.Execute();
+LongestConsecutiveProblem.Execute();
