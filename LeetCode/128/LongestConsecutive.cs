@@ -5,40 +5,37 @@ namespace LeetCode
 	{
 		public static void Execute()
 		{
-			int[] nums = { 1, 2, 0, 1 };
+			int[] nums = { 7, -9, 3, -6, 3, 5, 3, 6, -2, -5, 8, 6, -4, -6, -4, -4, 5, -9, 2, 7, 0, 0 };
 
 			Console.WriteLine(LongestConsecutive(nums));
 		}
 
+		//O(nlgn);
 		public static int LongestConsecutive(int[] nums)
 		{
 			if (nums.Length == 0) return 0;
-			int k = 1;
-			var orderedNums = nums.OrderBy(x => x);
+			Array.Sort(nums);
 
-			int index = 1;
-			for(int i = 0; i<orderedNums.Count() - 1; i++)
+			int longestStreak = 1;
+			int currentStreak = 1;
+
+			for(int i = 1; i < nums.Length; i++)
 			{
-				if (orderedNums.ElementAt(i) == orderedNums.ElementAt(i+1) - 1)
+				if (nums[i] != nums[i - 1])
 				{
-					index++;
-				}
-				else
-				{
-					if (k < index)
+					if (nums[i] == nums[i-1] + 1)
 					{
-						k = index;
-						index = 1;
+						currentStreak++;
+					}
+					else
+					{
+						longestStreak = Math.Max(longestStreak, currentStreak);
+						currentStreak = 1;
 					}
 				}
 			}
 
-            if (k < index)
-            {
-                k = index;
-            }
-
-            return k;
+            return longestStreak > currentStreak ? longestStreak : currentStreak;
 		}
 
     }
