@@ -13,4 +13,6 @@ using LeetCode;
 //AddBinaryProblem.Execute(); //TODO CHECK SOLUTIONS
 //ValidAnagramProblem.Execute(); //TODO SORT ANAGRAMS
 //NumUniqueEmailsProblem.Execute();
-LongestConsecutiveProblem.Execute();
+//LongestConsecutiveProblem.Execute(); //TODO solve o(n)
+ReplaceElementsProblem.Execute();
+
