@@ -13,7 +13,7 @@ namespace LeetCode
 				Console.WriteLine(item);
 		}
 
-		public static int[] ReplaceElements(int[] nums)
+		public static int[] ReplaceElementsOn2(int[] nums)
 		{
 			for(int i = 0; i < nums.Length - 1; i++)
 			{
@@ -26,6 +26,20 @@ namespace LeetCode
 			}
 
 			nums[nums.Length - 1] = -1;
+
+			return nums;
+		}
+
+		//O(n)
+		public static int[] ReplaceElements(int[] nums)
+		{
+			int initialMax = -1;
+			for(int i = nums.Length - 1; i >= 0; i--)
+			{
+				var lastMax = initialMax;
+				initialMax = initialMax < nums[i] ? nums[i] : initialMax;
+				nums[i] = lastMax;
+			}
 
 			return nums;
 		}
