@@ -14,5 +14,5 @@ using LeetCode;
 //ValidAnagramProblem.Execute(); //TODO SORT ANAGRAMS
 //NumUniqueEmailsProblem.Execute();
 //LongestConsecutiveProblem.Execute(); //TODO solve o(n)
-ReplaceElementsProblem.Execute();
-
+//ReplaceElementsProblem.Execute();
+FindDisappearedNumbersProblem.Execute();
