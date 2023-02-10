@@ -6,7 +6,7 @@ namespace LeetCode
 
 		public static void Execute()
 		{
-			string text = "nlaebolko";
+			string text = "b";
 
 			Console.WriteLine(MaxNumberOfBalloons(text));
 		}
@@ -14,7 +14,7 @@ namespace LeetCode
 		public static int MaxNumberOfBalloons(string text)
 		{
 			int count = 0;
-			string ballon = "ballon";
+			string ballon = "balon";
 			Dictionary<char, int> keyValues = new Dictionary<char, int>();
 
 			for(int i = 0; i< ballon.Length; i++)
@@ -25,8 +25,10 @@ namespace LeetCode
                 }
             }
 
+            keyValues['l'] /= 2;
+			keyValues['o'] /= 2;
 
-			return count;
+            return keyValues.Min(x => x.Value);
 		}
 
     }
