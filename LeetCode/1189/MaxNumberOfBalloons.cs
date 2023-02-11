@@ -13,7 +13,6 @@ namespace LeetCode
 
 		public static int MaxNumberOfBalloons(string text)
 		{
-			int count = 0;
 			string ballon = "balon";
 			Dictionary<char, int> keyValues = new Dictionary<char, int>();
 
