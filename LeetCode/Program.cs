@@ -15,5 +15,6 @@ using LeetCode;
 //NumUniqueEmailsProblem.Execute();
 //LongestConsecutiveProblem.Execute(); //TODO solve o(n)
 //ReplaceElementsProblem.Execute();
-MaxNumberOfBalloonsProblem.Execute();
+//MaxNumberOfBalloonsProblem.Execute();
+CanPlaceFlowersProblems.Execute();
 //FindDisappearedNumbersProblem.Execute();
